@@ -37,6 +37,6 @@ jobs:
     - name: Test with pytest
       run: |
         #pytest
-        coverage run -m pytest tests/
+        coverage run --source=./testecodealls -m pytest tests/
         coverage xml
         cat coverage.xml

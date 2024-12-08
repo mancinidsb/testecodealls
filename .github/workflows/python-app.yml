@@ -40,5 +40,7 @@ jobs:
         coverage run --source=./classes -m pytest tests/
         coverage xml
         cat coverage.xml
+        ls -a
+        coveralls
       env:
         COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}
